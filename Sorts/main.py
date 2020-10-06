@@ -10,6 +10,7 @@ if __name__ == "__main__":
     config.sections()
     config.read(SETTINGS_FILE)
 
+    # Define paths to your test cases in the settings.ini file and then add the new values below
     SORT_TEST_CASES = config['SORTING TEST CASES']['SORT_TESTCASES']
 
     INSERTION_SORT_TESTCASES = config['INSERTION SORT TESTCASES']['INSERTION_SORT_TESTCASES']
@@ -34,3 +35,4 @@ if __name__ == "__main__":
         print("Insertion Sort: Your sort results matches the expected results.")
     else:
         print("Insertion Sort: Something isn't right. Some or all of your results do not match.")
+
