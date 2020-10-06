@@ -1,18 +1,25 @@
-# Sorting TestSuite
+<body>
+  <p>
+  <h1>Sorting TestSuite</h1>
 
-Sorting testsuite is a small Python framework that allows you to test your sorting algorithms
+Sorting testsuite is a small Python framework that allows you to test your sorting algorithms <br />
 
 ## Usage
-1.  Define the paths to your test_cases, sorting_results, and expected results below in main.py
-  
-INSERTION_SORT_TESTCASES = r"PATH_TO_TEST_CASE_DIRECTORY"
-INSERTION_SORT_RESULTS = r"PATH_TO_INSERTION_SORT_RESULTS"
-EXPECTED_INSERTION_SORT_RESULTS = r"PATH_TO_INSERTION_SORT_EXPECTED_RESULTS"
+1.  Use the settings.ini file to define the test caases path. <br />
+ 
+[SORTING TEST CASES] <br />
+SORT_TESTCASES = /Users/tim/PycharmProjects/DSA/Sorts/Test_Cases/SORT_TESTCASES <br />
 
-SELECTION_SORT_TESTCASES = r"PATH_TO_TEST_CASE_DIRECTORY"
-SELECTION_SORT_RESULTS = r"PATH_TO_INSERTION_SORT_RESULTS"
-EXPECTED_SELECTION_SORT_RESULTS = r"PATH_TO_SELECTION_SORT_EXPECTED_RESULTS"
+[INSERTION SORT TESTCASES] <br />
+INSERTION_SORT_TESTCASES = /Users/tim/PycharmProjects/DSA/Sorts/Test_Cases/SORT_TESTCASES <br />
+INSERTION_SORT_RESULTS = /Users/tim/PycharmProjects/DSA/Sorts/insertion/Test_Cases/INSERTION_SORT_RESULTS <br />
+EXPECTED_INSERTION_SORT_RESULTS = /Users/tim/PycharmProjects/DSA/Sorts/insertion/Test_Cases/EXPECTED_INSERTION_SORT_RESULTS <br />
 
-2. In generate_random_lists.py, define the path to where you want your generated test cases to live. For example, SORT_TESTCASES = r"PATH_TO_SORT_TEST_CASES"
+[SELECTION SORT TESTCASES] <br />
+SELECTION_SORT_TESTCASES = /Users/tim/PycharmProjects/DSA/Sorts/Test_Cases/SORT_TESTCASES <br />
+SELECTION_SORT_RESULTS = /Users/tim/PycharmProjects/DSA/Sorts/selection/Test_Cases/SELECTION_SORT_RESULTS <br />
+EXPECTED_SELECTION_SORT_RESULTS = /Users/tim/PycharmProjects/DSA/Sorts/selection/Test_Cases/EXPECTED_SELECTION_SORT_RESULTS <br />
 
-3. Run main.py
+2. Run main.py
+</body>
+</p>
