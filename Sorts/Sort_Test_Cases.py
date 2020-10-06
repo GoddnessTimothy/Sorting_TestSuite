@@ -19,11 +19,11 @@ def sort_test_cases(in_data, out_data, expected_data, sort_type=""):
             else:
                 sorted_list = sorted(unsorted_list)
             # Write sorted list to "SELECTION_SORT_RESULTS".
-            output_data.write(str(sorted_list) + '\n')
+            output_data.write(str(sorted_list).replace("[","").replace("]","") + '\n')
             # Write sorted list (sorted with built-in sorted function) to "EXPECTED_RESULTS".
-            exp_data.write(str(sorted(list(unsorted_list))) + "\n")
+            exp_data.write(str(sorted(list(unsorted_list))).replace("[","").replace("]","") + "\n")
 
 
 def verify_sort(results, expected_results):
     # If true, both files match
-    return filecmp.cmp(results, expected_results)
+    return filecmp.cmp(results, expected_results, shallow=False)
