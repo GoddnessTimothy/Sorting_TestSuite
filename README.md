@@ -1,6 +1,6 @@
 <body>
   <p>
-# Sorting TestSuite
+## Sorting TestSuite
 
 Sorting testsuite is a small Python framework that allows you to test your sorting algorithms <br />
 
