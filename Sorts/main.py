@@ -2,10 +2,15 @@ from Sorts.Sort_Test_Cases import sort_test_cases, verify_sort
 from Sorts.Generate_Random_Lists import generate_random_lists
 import configparser
 
+# Define path for settings.ini file here.
+SETTINGS_FILE = '/Users/tim/PycharmProjects/DSA/Sorts/settings.ini'
+
 if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.sections()
-    config.read('/Users/tim/PycharmProjects/DSA/Sorts/settings.ini')
+    config.read(SETTINGS_FILE)
+
+    SORT_TEST_CASES = config['SORTING TEST CASES']['SORT_TESTCASES']
 
     INSERTION_SORT_TESTCASES = config['INSERTION SORT TESTCASES']['INSERTION_SORT_TESTCASES']
     INSERTION_SORT_RESULTS = config['INSERTION SORT TESTCASES']['INSERTION_SORT_RESULTS']
@@ -15,7 +20,8 @@ if __name__ == "__main__":
     SELECTION_SORT_RESULTS = config['SELECTION SORT TESTCASES']['SELECTION_SORT_RESULTS']
     EXPECTED_SELECTION_SORT_RESULTS = config['SELECTION SORT TESTCASES']['EXPECTED_SELECTION_SORT_RESULTS']
 
-    generate_random_lists(SELECTION_SORT_TESTCASES)
+    generate_random_lists(SORT_TEST_CASES)
+
     sort_test_cases(SELECTION_SORT_TESTCASES,
                     SELECTION_SORT_RESULTS, EXPECTED_SELECTION_SORT_RESULTS, "selection")
     if verify_sort(SELECTION_SORT_RESULTS, EXPECTED_SELECTION_SORT_RESULTS):
