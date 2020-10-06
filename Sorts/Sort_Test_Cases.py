@@ -15,8 +15,8 @@ def sort_test_cases(in_data, out_data, expected_data, sort_type=""):
                 sorted_list = selection_sort(unsorted_list)
             elif sort_type == "insertion".upper():
                 sorted_list = insertion_sort(unsorted_list)
+            # Sort using sorted() by default.
             else:
-                # Sort using sorted() by default.
                 sorted_list = sorted(unsorted_list)
             # Write sorted list to "SELECTION_SORT_RESULTS".
             output_data.write(str(sorted_list) + '\n')
