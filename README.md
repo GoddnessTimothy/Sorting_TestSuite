@@ -1,6 +1,6 @@
 <h1>Sort TestSuite</h1>
 Just 3 steps to use this testsuite.
-
+<p>
 1. Define the paths to your test_cases, sorting_results, and expected results below in main.py
   INSERTION_SORT_TESTCASES = r"PATH_TO_TEST_CASE_DIRECTORY"
   INSERTION_SORT_RESULTS = r"PATH_TO_INSERTION_SORT_RESULTS"
@@ -14,3 +14,4 @@ Just 3 steps to use this testsuite.
 SORT_TESTCASES = r"PATH_TO_SORT_TEST_CASES"
 
 3. Run main.py
+</p>
