@@ -4,15 +4,17 @@ from Sorts.Settings import *
 
 if __name__ == "__main__":
     generate_random_lists(SORT_TEST_CASES)
+    sort_type = "SELECTION"
     sort_test_cases(SELECTION_SORT_TESTCASES,
-                    SELECTION_SORT_RESULTS, EXPECTED_SELECTION_SORT_RESULTS, "selection")
+                    SELECTION_SORT_RESULTS, EXPECTED_SELECTION_SORT_RESULTS, sort_type)
     if verify_sort(SELECTION_SORT_RESULTS, EXPECTED_SELECTION_SORT_RESULTS):
-        print("Selection Sort: Your sort results matches the expected results.")
+        print(f"{sort_type}: Your sort results matches the expected results.")
     else:
-        print("Selection Sort: Something isn't right. Some or all of your results do not match.")
+        print(f"{sort_type}: Something isn't right. Some or all of your results do not match.")
 
-    sort_test_cases(INSERTION_SORT_TESTCASES, INSERTION_SORT_RESULTS, EXPECTED_INSERTION_SORT_RESULTS, "insertion")
+    sort_type = "INSERTION"
+    sort_test_cases(INSERTION_SORT_TESTCASES, INSERTION_SORT_RESULTS, EXPECTED_INSERTION_SORT_RESULTS,sort_type)
     if verify_sort(INSERTION_SORT_RESULTS, EXPECTED_INSERTION_SORT_RESULTS):
-        print("Insertion Sort: Your sort results matches the expected results.")
+        print(f"{sort_type}:Your sort results matches the expected results.")
     else:
-        print("Insertion Sort: Something isn't right. Some or all of your results do not match.")
+        print(f"{sort_type}: Something isn't right. Some or all of your results do not match.")
