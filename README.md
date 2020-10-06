@@ -1,5 +1,4 @@
 <body>
-  <p>
   <h1>Sorting TestSuite</h1>
 
 Sorting testsuite is a small Python framework that allows you to test your sorting algorithms <br />
@@ -21,5 +20,6 @@ SELECTION_SORT_RESULTS = /Users/tim/PycharmProjects/DSA/Sorts/selection/Test_Cas
 EXPECTED_SELECTION_SORT_RESULTS = /Users/tim/PycharmProjects/DSA/Sorts/selection/Test_Cases/EXPECTED_SELECTION_SORT_RESULTS <br />
 
 2. Run main.py
+
 </body>
-</p>
+
