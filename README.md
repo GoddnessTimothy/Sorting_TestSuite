@@ -4,7 +4,7 @@
 Sorting testsuite is a small Python framework that allows you to test your sorting algorithms <br />
 
 ## Usage
-1.  Use the settings.ini file to define the test caases path. <br />
+Use the settings.ini file to define the test caases path. <br />
  
 [SORTING TEST CASES] <br />
 SORT_TESTCASES = PATH_TO_SORT_TESTCASES <br />
@@ -19,7 +19,7 @@ SELECTION_SORT_TESTCASES = SORT_TESTCASES <br />
 SELECTION_SORT_RESULTS = PATH_TO_SELECTION_SORT_RESULTS <br />
 EXPECTED_SELECTION_SORT_RESULTS = PATH_TO_EXPECTED_SELECTION_SORT_RESULTS <br />
 
-2. Run main.py
+Run main.py
 
 </body>
 
