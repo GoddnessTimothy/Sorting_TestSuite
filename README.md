@@ -3,7 +3,7 @@
 
 Sorting testsuite is a small Python framework that allows you to test your sorting algorithms <br />
 
-## Adding a new sort to the test suite.  In this case, I am adding merge sort.
+## Adding a new sort to the test suite.  In this case, I am adding merge sort. (refer to commit 48968d)
 Use the settings.ini file to define the test cases path. <br />
  
 [SORTING TEST CASES] <br />
