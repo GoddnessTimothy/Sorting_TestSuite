@@ -1,5 +1,6 @@
 from Sorts.selection_sort.selection_sort import selection_sort
 from Sorts.insertion_sort.insertion_sort import insertion_sort
+from Sorts.merge_sort.merge_Sort import merge_sort
 import filecmp
 
 
@@ -15,9 +16,10 @@ def sort_test_cases(in_data, out_data, expected_data, sort_type=""):
                 sorted_list = selection_sort(unsorted_list)
             elif sort_type == "insertion".upper():
                 sorted_list = insertion_sort(unsorted_list)
+            elif sort_type == "merge".upper():
+                sorted_list = merge_sort(unsorted_list)
             # Sort using sorted() by default.
-            else:
-                sorted_list = sorted(unsorted_list)
+            else: sorted_list = sorted(unsorted_list)
             # Write sorted list to "SELECTION_SORT_RESULTS".
             output_data.write(str(sorted_list).replace("[","").replace("]","") + '\n')
             # Write sorted list (sorted with built-in sorted function) to "EXPECTED_RESULTS".
