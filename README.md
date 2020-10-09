@@ -48,6 +48,6 @@ python main.py
 
 Navigate to merge_sort/Test_Cases directory in your termninal and use: <br />
 diff EXPECTED_MERGE_SORT_RESULTS MERGE_SORT_RESULTS <br />
-If you don't see any output, the two files match. Python uses a special sort called TimSort to sort. The purpose of comparing these two results is to see if your <br /> merge sort matches the results of Python's sort results.
+If you don't see any output, the two files match. Python uses a special sort called TimSort to sort. The purpose of comparing these two results is to see if your merge sort matches the results of Python's sort results.
 </body>
 
