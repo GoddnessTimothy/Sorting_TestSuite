@@ -3,7 +3,7 @@
 
 Sorting testsuite is a small Python framework that allows you to test your sorting algorithms <br />
 
-## Usage
+## Adding a new sort to the test suite.  In this case, I am adding merge sort.
 Use the settings.ini file to define the test cases path. <br />
  
 [SORTING TEST CASES] <br />
@@ -18,6 +18,11 @@ EXPECTED_INSERTION_SORT_RESULTS = PATH_TO_EXPECTED_INSERTION_SORT_RESULTS <br />
 SELECTION_SORT_TESTCASES = SORT_TESTCASES <br />
 SELECTION_SORT_RESULTS = PATH_TO_SELECTION_SORT_RESULTS <br />
 EXPECTED_SELECTION_SORT_RESULTS = PATH_TO_EXPECTED_SELECTION_SORT_RESULTS <br />
+
+[MERGE SORT TESTCASES] <br />
+MERGE_SORT_TESTCASES = /Users/tim/PycharmProjects/DSA/Sorts/Test_Cases/SORT_TESTCASES <br />
+MERGE_SORT_RESULTS = /Users/tim/PycharmProjects/DSA/Sorts/merge_sort/Test_Cases/MERGE_SORT_RESULTS <br />
+EXPECTED_MERGE_SORT_RESULTS = /Users/tim/PycharmProjects/DSA/Sorts/merge_sort/Test_Cases/EXPECTED_MERGE_SORT_RESULTS <br />
 
 ## Add entry to settings.py
 MERGE_SORT_TESTCASES = config['MERGE SORT TESTCASES']['MERGE_SORT_TESTCASES'] <br />
