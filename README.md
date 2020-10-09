@@ -43,7 +43,7 @@ if verify_sort(MERGE_SORT_RESULTS, EXPECTED_MERGE_SORT_RESULTS): <br />
 else: <br />
   print(f"{sort_type}: Something isn't right. Some or all of your results do not match.")<br />
 
-## Execute the script
+## Execute the script and confirm the results.
 python main.py
 </body>
 
