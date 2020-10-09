@@ -45,5 +45,9 @@ else: <br />
 
 ## Execute the script and confirm the results.
 python main.py
+
+Navigate to merge_sort/Test_Cases directory in your termninal and use: <br />
+diff EXPECTED_MERGE_SORT_RESULTS MERGE_SORT_RESULTS <br />
+If you don't see any output, the two files match. 
 </body>
 
