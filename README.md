@@ -26,17 +26,16 @@ MERGE_SORT_RESULTS = PATH_TO_MERGE_SORT_RESULTS <br />
 EXPECTED_MERGE_SORT_RESULTS = PATH_TO_EXPECTED_MERGE_SORT_RESULTS<br />
 </strong>
 
-## Add entry to settings.py
+## Add entry to settings.py to reflect the new entry in settings.ini.
 MERGE_SORT_TESTCASES = config['MERGE SORT TESTCASES']['MERGE_SORT_TESTCASES'] <br />
 MERGE_SORT_RESULTS = config['MERGE SORT TESTCASES']['MERGE_SORT_RESULTS'] <br />
 EXPECTED_MERGE_SORT_RESULTS = config['MERGE SORT TESTCASES']['EXPECTED_MERGE_SORT_RESULTS'] <br />
 
-## Update Sort_Test_Cases.py
+## Update Sort_Test_Cases.py so that merge_sort will be used to sort the test cases.
 elif sort_type == "merge".upper(): <br />
     sorted_list = merge_sort(unsorted_list)
 
-## Update main.py code
-
+## Update main.py code to check if your test cases has been properly sorted with merge sort.
 sort_type = "MERGE" <br />
 sort_test_cases(MERGE_SORT_TESTCASES, MERGE_SORT_RESULTS, EXPECTED_MERGE_SORT_RESULTS, sort_type) <br />
 if verify_sort(MERGE_SORT_RESULTS, EXPECTED_MERGE_SORT_RESULTS): <br />
